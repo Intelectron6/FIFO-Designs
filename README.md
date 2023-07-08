@@ -1,16 +1,15 @@
 # FIFO-Designs
-Verilog codes of Synchronous and Asynchronous FIFOs.
+Verilog codes of Synchronous and Asynchronous FIFOs. </br>
 
-Synchronous FIFO :
-  Depth = 8 (hence Address width = 3 bits)
-  Data width = 16 bits
-  Extra address bit to help distinguish between full and empty conditions
+Synchronous FIFO :  </br>
+  Depth = 8 (hence Address width = 3 bits)  </br>
+  Data width = 16 bits  </br>
+  Extra address bit to help distinguish between full and empty conditions  </br>
   
-Asynchronous FIFO :
-  Depth = 8 (hence Address width = 3 bits)
-  Data width = 16 bits
-  Gray code pointer for 2-flop synchronization
-  Binary code pointer for addressing
+Asynchronous FIFO :  </br>
+  Depth = 8 (hence Address width = 3 bits)  </br>
+  Data width = 16 bits  </br>
+  Gray code pointer for 2-flop synchronization  </br>
+  Binary code pointer for addressing  </br>
 
-"Simulation and Synthesis Techniques for Asynchronous FIFO Design" by Clifford E. Cummings, Sunburst Design, Inc. was referred for the design.
-Going through the document is highly recommended.  
+"Simulation and Synthesis Techniques for Asynchronous FIFO Design" by Clifford E. Cummings, Sunburst Design, Inc. was referred for the designs. Going through the document is highly recommended.  
