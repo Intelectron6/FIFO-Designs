@@ -18,7 +18,6 @@ module synchronous_fifo (input clk,
 		begin
 			wtr_ptr <= 0; 
 			rd_ptr <= 0;
-			data_out <= 0;
 		end
 		
 		else if (wrt_en & !full) 
