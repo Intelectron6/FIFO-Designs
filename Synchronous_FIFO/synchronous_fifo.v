@@ -28,7 +28,7 @@ module synchronous_fifo (input clk,
 		
 		else if (rd_en & !empty) 
 			rd_ptr <= rd_ptr + 1;
-    end
+   	end
 
 	assign data_out = fifo_mem[rd_ptr[2:0]];
 	
