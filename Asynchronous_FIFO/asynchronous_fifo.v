@@ -8,11 +8,11 @@ module asynchronous_fifo (output [15:0] rd_data,
 	wire [2:0] wrt_addr, rd_addr;
 	wire [3:0] wrt_ptr, rd_ptr, wq2_rd_ptr, rq2_wrt_ptr;
 
-	sync_r2w srw (wq2_rd_ptr, rd_ptr, wrt_clk, wrt_rst_n);
+	sync_rd_2_wrt srw (wq2_rd_ptr, rd_ptr, wrt_clk, wrt_rst_n);
 
-	sync_w2r swr (rq2_wrt_ptr, wrt_ptr, rd_clk, rd_rst_n);
+	sync_wrt_2_rd swr (rq2_wrt_ptr, wrt_ptr, rd_clk, rd_rst_n);
 
-	fifo_mem fm (rd_data, wrt_data, wrt_addr, rd_addr, wrt_clken, full, wrt_clk);
+	fifo_mem fm (rd_data, wrt_data, wrt_addr, rd_addr, wrt_en, full, wrt_clk);
 
 	rd_ptr_empty re (empty, rd_addr, rd_ptr, rq2_wrt_ptr, rd_en, rd_clk, rd_rst_n);
 
