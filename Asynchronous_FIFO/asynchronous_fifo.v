@@ -1,9 +1,9 @@
 module asynchronous_fifo (output [15:0] rd_data,
-						  output full,
-						  output empty,
-						  input [15:0] wrt_data,
-						  input wrt_en, wrt_clk, wrt_rst_n,
-						  input rd_en, rd_clk, rd_rst_n);
+			  output full,
+			  output empty,
+			  input [15:0] wrt_data,
+			  input wrt_en, wrt_clk, wrt_rst_n,
+			  input rd_en, rd_clk, rd_rst_n);
 	
 	wire [2:0] wrt_addr, rd_addr;
 	wire [3:0] wrt_ptr, rd_ptr, wq2_rd_ptr, rq2_wrt_ptr;
