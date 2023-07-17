@@ -1,8 +1,8 @@
-module sync_rd_2_wrt (output reg [3:0] wq2_rd_ptr,
-					  input [3:0] rd_ptr,
-					  input wrt_clk, wrt_rst_n);
+module sync_rd_2_wrt (output reg [6:0] wq2_rd_ptr,
+		      input [6:0] rd_ptr,
+		      input wrt_clk, wrt_rst_n);
 				 
-	reg [3:0] temp_ptr;
+	reg [6:0] temp_ptr;
 	
 	// 2 flop synchronizer for read point with respect to write clock
 	always @(posedge wrt_clk or negedge wrt_rst_n)
