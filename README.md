@@ -7,7 +7,7 @@ Synchronous FIFO :  </br>
   Extra address bit to help distinguish between full and empty conditions  </br>
   
 Asynchronous FIFO :  </br>
-  Depth = 8 (hence Address width = 3 bits)  </br>
+  Depth = 64 (hence Address width = 6 bits)  </br>
   Data width = 16 bits  </br>
   Gray code pointer for 2-flop synchronization  </br>
   Binary code pointer for addressing  </br>
