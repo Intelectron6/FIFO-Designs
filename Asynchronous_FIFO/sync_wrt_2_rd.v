@@ -1,4 +1,4 @@
-module sync_wtr_2_rd (output reg [6:0] rq2_wrt_ptr,
+module sync_wrt_2_rd (output reg [6:0] rq2_wrt_ptr,
 		      input [6:0] wrt_ptr,
 		      input rd_clk, rd_rst_n);
 				 
