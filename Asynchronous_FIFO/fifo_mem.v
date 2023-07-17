@@ -1,6 +1,6 @@
 module fifo_mem (output [15:0] rd_data,
 		 input [15:0] wrt_data,
-		 input [2:0] wrt_addr, rd_addr,
+		 input [5:0] wrt_addr, rd_addr,
 		 input wrt_en, full, wrt_clk);
 
 	// RTL Verilog memory model
