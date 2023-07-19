@@ -11,15 +11,15 @@ module testbench;
 	integer i;
 	
 	asynchronous_fifo fifo (rd_data,
-								   full,
-								   empty,
-								   wrt_data,
-								   wrt_en,
-									wrt_clk,
-									wrt_rst_n,
-								   rd_en,
-									rd_clk,
-									rd_rst_n);
+				full,
+				empty,
+			        wrt_data,
+			   	wrt_en,
+				wrt_clk,
+				wrt_rst_n,
+			   	rd_en,
+				rd_clk,
+				rd_rst_n);
 	
 	always
 	begin
